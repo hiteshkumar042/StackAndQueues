@@ -28,7 +28,38 @@ namespace StackAndQueues
             }
             this.top = node;
             //Display Added Data value
-            Console.WriteLine("{0} pushed to Stack. ", value);
+            Console.WriteLine("{0} pushed  to Stack : ", value);
+        }
+        //Display Data of Top
+        internal void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty !");
+                return;
+            }
+            Console.WriteLine("{0} is in the top of the Stack : ", this.top.data);
+        }
+        //Delee data from Top of the Stack
+        internal void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty, Deletion is not Possible !");
+                return;
+            }
+            Console.WriteLine("Popped value : {0}", this.top.data);
+            Console.WriteLine("----------------------------");
+            this.top = this.top.next;
+        }
+        //Deletion till stack Will Empty
+        internal void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
         }
         //Display Stack
         internal void Display()
@@ -36,7 +67,7 @@ namespace StackAndQueues
             Node temp = this.top;
             while (temp != null)
             {
-                Console.WriteLine("Stack Data : " + temp.data);
+                Console.WriteLine("Stack data : " + temp.data);
                 temp = temp.next;
             }
         }
