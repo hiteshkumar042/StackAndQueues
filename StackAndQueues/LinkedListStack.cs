@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StackAndQueues
+﻿namespace StackAndQueues
 {
     internal class LinkedListStack
     {
@@ -71,5 +65,6 @@ namespace StackAndQueues
                 temp = temp.next;
             }
         }
+
     }
 }

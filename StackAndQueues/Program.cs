@@ -1,4 +1,6 @@
-﻿namespace StackAndQueues
+﻿using System;
+
+namespace StackAndQueues
 {
     internal class Program
     {
@@ -34,6 +36,17 @@
 
                     //Display Queue
                     linkedListQueue.Display();
+                    Console.WriteLine("----------------");
+
+                    //Dequeue from queue
+                    linkedListQueue.Dequeue();
+
+                    //Empty Dequeue
+                    linkedListQueue.IsEmpty();
+
+                    //Display Queue
+                    linkedListQueue.Display();
+                    Console.WriteLine("----------------");
                     break;
             }
         }
